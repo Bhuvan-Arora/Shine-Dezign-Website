@@ -9,4 +9,5 @@ Supported Browser : Stable Version of Google Chrome
 > Open index.html file in supported browser  
 > Make sure Internet is connected because Bootstrap4 CDN is used which requires internet to work.  
 
-#### This website in copyrighted of Shine Dezign, All rights reserved. You can't allowed to use/edit/publish this design or code anywhere in production
+##### Copyright © 2019 shinedezigninfonet.com. All Rights Reserved  
+> Shine Dezign have copyright of this website. You are not allowed to use/edit/publish this design or code anywhere in production
