@@ -1,0 +1,604 @@
+@import 'global-color-constants';
+@import 'media-mixin';
+@import 'global-styles';
+
+#section1 
+{
+    padding-bottom: 2.5rem;
+
+    #infoHeader
+    {
+        margin-top: .5rem;
+    }
+
+    #it
+    {
+        background: $sd-purple-dark;
+        padding-left: .5rem;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        margin-right: .25rem;
+    }
+
+    #requestDemo
+    {
+        background-color: $sd-light-green;
+        color: $sd-black;
+        padding: .5rem;
+        margin-left: 3rem;
+        font-size: .625rem;
+        @extend .cursor-pointer;
+    }
+
+    #layerIcon
+    {
+        height: 1rem;
+        width: 1.5rem;
+        margin-left: 3rem;
+        @extend .cursor-pointer;
+    }
+
+    #mainHeading
+    {
+        max-width: 345px;
+        
+        .main-text
+        {
+            margin-top: 4rem;
+            font-size: $font-xl;
+            line-height: 1;
+        }
+
+        .main-background
+        {
+            height: 62px;
+            width: 230px;
+            background: $sd-purple-dark;
+            top: 80px;
+            left: -16px;
+            opacity: 0.4;
+        }
+
+        .main-border-line
+        {
+            border: 2px solid $sd-light-green;
+            width: 145px;
+            left: 195px;
+            bottom: -2px;
+            border-radius: 1px;
+        }
+    }
+    
+    #mainDescription, #exploreServices
+    {
+        width: 345px;
+        margin-top: 32px;
+    }
+
+    .curve
+    {
+        top: calc(50% - 74px); //74px is half height of icon - to align verticaly centre
+        left: 0;
+        opacity: .3;
+    }
+    
+    .dots
+    {
+        top: calc(50% - 105px); //105px is half height of icon - to align verticaly centre
+        left: 150px;
+        opacity: .4;
+    }
+
+    .zero
+    {
+        top: 70%; 
+        left: 200px;
+        opacity: .2;
+    }
+
+    .pagination
+    {
+        right: 1rem;
+        top: 35%;
+
+        .circle
+        {
+            border: 1px solid white;
+            width: .5rem;
+            height: .5rem;
+            border-radius: 50%;
+        }
+
+        .circle.selected
+        {
+            background-color: $sd-light-green;
+        }
+    }
+
+    .scroll-text
+    {
+        right: 0px;
+        top: 60%;
+        transform: rotateZ(90deg);
+        opacity: .5;
+    }
+
+    .scroll-line
+    {
+        height: 100px;
+        border-right: 1px solid $sd-white;
+        right: 20px;
+        top: 70%;
+        opacity: .5;
+    }
+}
+
+#section2
+{
+    #buildBusiness
+    {
+        min-width: 345px;
+        max-width: 700px;
+        font-size: $font-lg;
+        @extend .font-bold;
+    }
+
+    @include respond-above(lg)
+    {
+        #buildBusiness
+        {
+            font-size: $font-xl;
+        }
+    }
+
+    #getStarted
+    {
+        border: 1px solid $sd-black;
+        -moz-box-shadow: 4px 4px 2px $sd-light-green;
+        -webkit-box-shadow: 4px 4px 2px $sd-light-green;
+        box-shadow: 4px 4px 2px $sd-light-green;
+        @extend .cursor-pointer;
+
+        img
+        {
+            width: 2.5rem;
+        }
+    }
+
+    #getStarted:hover
+    {
+        -moz-box-shadow: 8px 8px 4px $sd-light-green;
+        -webkit-box-shadow: 8px 8px 4px $sd-light-green;
+        box-shadow: 8px 8px 4px $sd-light-green;
+    }
+
+    .count-div
+    {
+        border: 1px solid $sd-light-gray;
+
+        .count
+        {
+            font-size: $font-xl;
+            @extend .font-bold;
+        }
+    }
+
+    .count-div.first
+    {
+        background-color: $sd-light-green;
+        border-color: $sd-light-green;
+    }
+
+    .count-div.third
+    {
+        border-right-color: transparent;
+    }
+
+    .count-div.second
+    {
+        border-bottom-color: transparent;
+    }
+
+    #whatAcheived
+    {
+        font-size: $font-lg;
+        @extend .font-bold;
+    }
+
+    @include respond-above(lg)
+    {
+        #whatAcheived
+        {
+            font-size: $font-xl;
+        }
+    }
+}
+
+#section3
+{
+    #whatWeDo
+    {
+        font-size: $font-lg;
+        @extend .font-bold;
+        
+    }
+     
+    .what-we-do-content
+    {
+        @extend .cursor-pointer;
+    }
+
+    .what-we-do-content.selected
+    {
+        @extend .font-bold;
+        
+        img
+        {
+            width: 3.75rem;
+        }
+    }
+
+    #logoPresentationImg
+    {
+        img
+        {
+            max-height: 300px;
+        }
+    }
+}
+
+#section4
+{
+    padding-bottom: 70px;
+
+    .dare-to-social
+    {
+        .heading
+        {
+            @extend .font-bold;
+        }
+
+        .arrow-with-circle
+        {
+            margin-right: 8.5rem;
+            margin-top: 2rem;
+
+            .circle
+            {
+                bottom: -9px;
+            }
+        }
+    }
+
+    .dare-to-social.right
+    {
+        width: 250px;
+        height: 100px;
+        background: $sd-white;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    @include respond-above(xs)
+    {
+        .dare-to-social.right
+        {
+            height: 150px;
+        }
+    }
+
+    @include respond-above(md)
+    {
+        .dare-to-social.right
+        {
+            height: 250px;
+
+            .heading
+            {
+                font-size: $font-lg;
+            }
+        }
+    }
+
+    .dare-to-social.bottom
+    {
+        height: 125px;
+        width: calc(100% - 4rem);
+        background-color: $sd-white;
+        bottom: -70px;
+
+        .arrow-with-circle
+        {
+            height: 10px;
+        }
+    }
+    @include respond-above(xs)
+    {
+        .dare-to-social.bottom
+        {
+            height: 150px;
+        }
+    }
+
+    @include respond-above(md)
+    {
+        .dare-to-social.bottom
+        {
+            .heading
+            {
+                font-size: $font-lg;
+            }
+        }
+    }
+}
+
+@include respond-above(md)
+{
+    #section4
+    {
+        padding-bottom: 120px;
+    }
+}
+
+#section5
+{
+    .names
+    {
+        font-size: $font-md;
+        .selected
+        {
+            color: $sd-light-green;
+        }
+    }
+
+    .arrow
+    {
+        margin-top: 2rem;
+        min-width: 1rem;
+    }
+
+    .quote
+    {
+        top: 0px;
+        right: 80px;
+        opacity: .5;
+    }
+
+    #testimonial
+    {
+        top: 150px;
+        right: -100px;
+        transform: rotateZ(90deg);
+        font-size: $font-xl;
+        opacity: .2;
+    }
+
+    .image
+    {
+        .img-bg
+        {
+            border: 1px solid $sd-white;
+            top: .5rem;
+            left: .5rem;
+        }
+    }
+}
+
+#section6
+{
+    .header-wrapper
+    {
+        min-width: 510px;
+    }
+
+    .header
+    {
+        color: $sd-dark-gray;
+        @extend .cursor-pointer;
+    }
+
+    .header:hover,
+    .header.selected
+    {
+        color: $sd-black;
+        border-bottom: 2px solid $sd-black;
+    }
+
+    .box-wrapper
+    {
+        background-color: $sd-light-green;
+    }
+
+    #getStarted
+    {
+        border: 1px solid $sd-black;
+        -moz-box-shadow: 4px 4px 2px  $sd-black;
+        -webkit-box-shadow: 4px 4px 2px  $sd-black;
+        box-shadow: 4px 4px 2px $sd-black;
+        @extend .cursor-pointer;
+
+        img
+        {
+            width: 2.5rem;
+        }
+    }
+
+    #getStarted:hover
+    {
+        -moz-box-shadow: 8px 8px 4px $sd-black;
+        -webkit-box-shadow: 8px 8px 4px $sd-black;
+        box-shadow: 8px 8px 4px $sd-black;
+    }
+    .right-effect
+    {
+        right: 0;
+        top: 0;
+
+        img
+        {
+            max-height: 250px;
+        }
+    }
+
+    .left-effect-polygon
+    {
+        left: 20%;
+        top: 70%;
+        opacity: .8;
+    }
+
+    .left-effect-dots
+    {
+        left: 1rem;
+        top: 60%;
+        opacity: .8;
+    }
+}
+
+#section7
+{
+    background-color: $sd-dark-green;
+
+    #heading
+    {
+        @extend .font-bold;
+    }
+
+    #getStarted
+    {
+        border: 1px solid $sd-white;
+        -moz-box-shadow: 4px 4px 2px $sd-light-green;
+        -webkit-box-shadow: 4px 4px 2px $sd-light-green;
+        box-shadow: 4px 4px 2px $sd-light-green;
+        @extend .cursor-pointer;
+
+        img
+        {
+            width: 2.5rem;
+        }
+    }
+
+    #getStarted:hover
+    {
+        -moz-box-shadow: 8px 8px 4px $sd-light-green;
+        -webkit-box-shadow: 8px 8px 4px $sd-light-green;
+        box-shadow: 8px 8px 4px $sd-light-green;
+    }
+
+    #subscribe, #getStarted
+    {
+        width: 200px;
+    }
+
+    .quick-link
+    {
+        @extend .cursor-pointer;
+    }
+
+    .quick-link.selected
+    {
+        @extend .font-bold;
+    }
+
+    #footer
+    {
+        border-top: 1px solid $sd-dark-gray;
+        .privacy-seprator
+        {
+            border-right: 1px solid $sd-white;
+        }
+        .footer-icon
+        {
+            @extend .cursor-pointer;
+            .circle
+            {
+                border-radius: 50%;
+                border: 1px solid black;
+
+                img
+                {
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+#section2, #section4, #section5, #section6
+{
+    #heading
+    {
+        font-size: $font-md;
+        @extend .font-bold;
+    }
+
+    @include respond-above(md)
+    {
+        #heading
+        {
+            font-size: $font-lg;
+        }
+    }
+
+    @include respond-above(lg)
+    {
+        #heading
+        {
+            font-size: $font-xl;
+        }
+    }
+
+    #readMore
+    {
+        @extend .cursor-pointer;
+        .text
+        {
+            white-space: nowrap;
+            font-size: $font-sm;
+            line-height: 1.5rem;
+        }
+    }
+
+    .arrow-with-circle
+    {
+        .circle
+        {
+            border-color: $sd-light-gray;
+        }
+    }
+}
+
+.section.odd
+{
+    background-color: $sd-purple;
+    color: $sd-white;
+}
+
+.section.pad-y
+{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.arrow-with-circle
+{
+    margin-left: 1rem;
+    @extend .cursor-pointer;
+    
+    img
+    {
+        width: 60px;
+    }
+
+    .circle
+    {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $sd-white;
+        border-radius: 50%;
+        right: -14px;
+        bottom: -6px;
+    }
+}    

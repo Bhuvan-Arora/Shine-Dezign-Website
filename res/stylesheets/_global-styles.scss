@@ -1,0 +1,60 @@
+$font-xs: 12px;
+$font-sm: 14px;
+$font-md: 20px;
+$font-lg: 32px;
+$font-xl: 40px;
+
+.flex-fill
+{
+    display: flex;
+    flex-grow: 1;
+}
+
+.font-sm
+{
+    font-size: $font-sm;
+    color: $sd-light-gray;
+}
+
+.font-xsm
+{
+    font-size: $font-xs;
+    color: $sd-light-gray;
+}
+
+.font-bold
+{
+    font-weight: bold;
+}
+
+.overflow-x-auto
+{
+    overflow-x: auto;
+}
+
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
+@include respond-above(xs)
+{
+    .d-xs-flex
+    {
+        display: flex !important;
+    }
+}
+
+@include respond-above(lg)
+{
+    .px-lg-7
+    {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+}
+
+.highlight-text
+{
+    border-bottom: 4px solid $sd-light-green;
+}
