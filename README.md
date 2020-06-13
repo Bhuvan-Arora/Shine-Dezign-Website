@@ -1,7 +1,7 @@
 # Shine Dezign Website
  This repository contains the landing page of shine dezign's website
 
-Minimum Screen Width Supported : 375px
+Minimum Screen Width Supported : 375px  
 Supported Browser : Stable Version of Google Chrome
 
 # How to run
