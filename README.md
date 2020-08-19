@@ -4,6 +4,8 @@
 Minimum Screen Width Supported : 375px  
 Supported Browser : Stable Version of Google Chrome
 
+Live Demo : https://shine-dezign.netlify.app/
+
 # How to run
 > Download or Clone the repository  
 > Open index.html file in supported browser  
